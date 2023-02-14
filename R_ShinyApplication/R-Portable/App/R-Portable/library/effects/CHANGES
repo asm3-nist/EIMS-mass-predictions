@@ -1,0 +1,156 @@
+Version 0.9-0 initial release to CRAN
+
+Version 1.0-0
+
+o Rewrote summary.effect method and added print.summary.effect method.
+
+Version 1.0-1
+
+o Blanks can be inserted into or removed from effect names without causing an error; thus, e.g., "poly(education,3)" is equivalent to "poly(education, 3)".
+
+o Name spaces of lattice and grid packages are imported, as required in R 1.8.0.
+
+Version 1.0-2
+
+o Added ask argument to plot.effect.list, and row, col, nrow, ncol, and more arguments to plot.effect, to support graphing an array of effect plots.
+
+o Fixed bug in plot.effect that caused xlab argument to be ignored in certain circumstances.
+
+Version 1.0-3
+
+o effect function now works if na.action is na.exclude.
+
+Version 1.0-4
+
+o Fixed small bug introduced in version 1.0-3.
+
+Version 1.0-5
+
+o x.var and z.var arguments to plot.effect now take names as well as indices.
+
+Version 1.0-6
+
+o A variable specified in xlevels can be fixed to a single value.
+
+Version 1.0-7
+
+o Made effect() generic, with a method for lm objects that handles glm objects as well.
+
+Version 1.0-8
+
+o Small fixes to the help files.
+
+Version 1.0-9
+
+o Small change to compile without a warning in R 2.4.0.
+
+Version 1.0-10
+
+o Standard errors of effects are computed using t rather than standard-normal distribution for models with estimated dispersion (as suggested by Brian Ripley).
+
+o Small fixes.
+
+o Objects are now named "eff" and "eff.list" rather than "effect" and "effect.list".
+
+o Data sets now provided by lazy data.
+
+Version 1.0-11
+
+o Replaced obsolete \non_function{} markup in Rd files (reported by Kurt Hornik).
+
+Version 1.0-12
+
+o key.args argument added to plot.eff() (coutesy of Michael Friendly), to allow conrol over, e.g., placement of legend.
+
+Version 2.0-0
+
+o Jangman Hong joins project.
+
+o support added for multinomial and proportional-odds logit models, as fit by multinom() (in nnet package) and polr() (in MASS) package, following results in Fox and Andersen (2006).
+
+o added the argument given.values to effect() methods for finer-grain control of displays.
+
+Version 2.0-1
+
+o Fixed bug in effect.polr() that prevented computation for a model with a single term (reported by Paul Prew).
+
+Version 2.0-2
+
+o Fixed bug in print(), summary(), and plot() methods for polytomous logit models with a response with numbered levels (reported by Paul Prew).
+
+Version 2.0-3
+
+o Fixed bug in all effect() methods that caused error when na.action="na.exclude" (reported by Tracy Lightcap and Rob Goedman).
+
+Version 2.0-4
+
+o Palettes from the colorspace package are used by default for stacked plots.
+
+o Fixed bug in handling of typical= argument to effect() (argument was effectively ignored).
+
+o Added Titanic and Wells data sets.
+
+o Small changes.
+
+Version 2.0-5
+
+o Added examples for Titanic, BEPS, and WVS data sets.
+
+o Arguments ... (e.g., digits) passed through in print() methods.
+
+Version 2.0-6
+
+o Fixed small bugs in print.efflist(), summary.efflist(), and plot.effpoly() methods.
+
+o Corrected error in missing-data handling that sometimes surfaced in effect.multinom().
+
+o Added .Rd file for package.
+
+Version 2.0-7
+
+o Fixed bug in handling of given.values argument to effect().
+
+Version 2.0-8
+
+o The S3 method print.summary.eff is now declared in NAMESPACE (as it should have been all along).
+
+o Added CITATION.txt file (courtesy of Achim Zeileis).
+
+o Version corresponding to John Fox, Jangman Hong (2009), Effect Displays in R for Multinomial and Proportional-Odds Logit Models: Extensions to the effects Package. Journal of Statistical Software, 32(1), 1-24 <http://www.jstatsoft.org/v32/i01/>.
+
+O Fixed [pgk] markup in .Rd file cross-references.
+
+Version 2.0-9
+
+o Applied patches contributed by Ian Fellows to allow logical predictors and various coercions in model formulas to work properly.
+
+o Fixed name of CITATION file (was CITATION.txt).
+
+o Small changes to docs.
+
+Version 2.0-10
+
+o Backed out Ian Fellows's patches because of errors.
+
+Version 2.0-11
+
+o Small change to eliminate warnings produced in R 2.12.0.
+
+o Added nrows and ncols argument to plot.efflist() (following suggstion by Michael Friendly).
+
+o Small fix to docs.
+
+Version 2.0-12
+
+o plot.eff() and plot.effpoly now return an object, printed by print.plot.eff() (after a question by Michael Friendly).
+
+o New effect.gls() method, various changes for compatibility (after a question by Oriol Verdeny Vilalta).
+
+o effect.lm() now stores the covariance matrix of the effects (after a question by Bernhard Kaess).
+
+Version 2.0-13
+
+o effect.multinom() and effect.polr() now use update() to refit the model rather than calling multinom() or polr() directly; update for effect.multinom() sets trace=FALSE (after suggestions by David Armstrong).
+
+o Added [.efflist method (after a question by Andreas Roesch).
+

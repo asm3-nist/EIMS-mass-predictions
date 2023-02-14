@@ -1,0 +1,32 @@
+﻿  asm-MM-Predictor-2021.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(92,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(128,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(67,10): warning C4101: 'letter': unreferenced local variable
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(258,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(263,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(271,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(224,13): warning C4101: 'k': unreferenced local variable
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(224,11): warning C4101: 'j': unreferenced local variable
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(355,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(396,44): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(418,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(435,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(436,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(460,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(493,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(495,26): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(499,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(500,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(581,36): warning C4018: '<': signed/unsigned mismatch
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(631,62): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(635,33): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(704,34): warning C4305: 'initializing': truncation from 'int' to 'char'
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(704,29): warning C4309: 'initializing': truncation of constant value
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(824,37): warning C4305: '=': truncation from 'int' to 'char'
+C:\Users\asm3\source\repos\asm-MM-Predictor-2021\asm-MM-Predictor-2021.cpp(824,32): warning C4309: '=': truncation of constant value
+  asm-MM-Predictor-2021.vcxproj -> C:\Users\asm3\source\repos\asm-MM-Predictor-2021\Debug\asm-MM-Predictor-2021.exe

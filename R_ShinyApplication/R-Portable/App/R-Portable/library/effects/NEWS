@@ -1,0 +1,338 @@
+Version 4.1-2
+
+ o Effect methods for clm, clm2, and clmm models were not correctly passing the estimated theshholds to polr for computing effects (error reported by Stefan Th. Gries).  
+ 
+ o Updated "Defining Effects Methods ..." vignette to reflect revisions to Effect.clm, Effect.clm2 and Effect.clmm.
+ 
+ o Make sure that Effect() and plot() methods work correctly with character and logical predictors (following bug report by Julian Gaviria Lopez).
+
+Version 4.1-1
+ 
+ o Accommodate character and logical predictors.
+ 
+ o Make sure that lty argument to plot() is not ignored.
+ 
+ o Change behavior of default levels argument to predictorEffect.default() and predictorEffects.default() when residuals=TRUE to match that of Effect.lm().
+ 
+ o Fix to Effect.default() to make fake glm fit more robust and fixed bug in .set.given.equal() in tests for model class.
+
+Version 4.1-0
+
+ o Fixed a bug in Effect.gls to ignore the 'weights' argument on the call to gls.
+ 
+ o Added predictor effects graphics gallery vignette.
+ 
+ o predictorEffect() and predictorEffects() have new xlevels and focal.levels arguments.
+
+ o Removed the transform argument from as.data.frame.eff(), and added type argument.  Made the transformation argument to Effect() a legacy argument and added transform as sub-argument to axes=list(y=list(transform=...)) in plot.eff(). 
+ 
+ o Rearanged man files.
+ 
+ o Extend use of cex sub-args for x and y axes and lattice strips to plot.effpoly().
+ 
+ o Avoid warnings when testing given.values == "default" or "equal".
+ 
+ o Modified plot.effpoly() so that multiline plots don't show confidence limits by default, and so that confidence bars for a factor are staggered.
+ 
+ o Added effectsHexsticker().
+ 
+ o Fixed bug in plotting partial residuals when a factor focal predictor had empty levels.
+ 
+ o Small fixes and improvements.
+
+Version 4.0-3
+
+ o xlevels argument now works with predictorEffects.
+ 
+ o Added cex sub-args for x and y axes (suggestion of Charles Leger) and for lattice strips.
+ 
+ o modified .onAttach() so that trellis device doesn't open, suggestion of Kurt Hornik.
+
+Version 4.0-2
+
+ o Fixed bug with offsets in predictorEffects and a bug with variances in Effect.default.
+ 
+ o Support partial-residual plots when the predictor on the horizontal axis is a factor.
+
+ o For nonstandard models like lme, the weights argument was obtained from the call that created the object.  This argument was never used by effects, and caused an error with lme models that used weights. The weights argument is now ignored.
+ 
+ o Fixed a bug due to new complete arg in vcov.lm() and vcov.glm().
+ 
+ o lty was ignored for multiplot with factor on x-axis; now fixed (reported by Krisztian Magori).
+ 
+ o Small fixes and improvements.
+
+Version 4.0-1
+ 
+ o Replaced the Effect.default method so it is easier to write new methods.
+ 
+ o Added estimability check for linear models and glims.  Fixed bugs in plot with rank deficient models.
+ 
+ o Repaired clm, clmm and clm2 methods that were broken.
+ 
+ o Fixed a bug in predictorEffects with polym use to specify multivariate polynomials.
+ 
+ o Replace confint and partial.residuals argument to Effect() with se and residuals; confint and partial.residuals now legacy arguments.
+ 
+ o Small fixes/improvements.
+
+Version 4.0-0
+
+ o This is a major update of the effects package.
+
+ o Moved data sets to the carData package.
+ 
+ o Introduced predictor effects.
+ 
+ o Reorganized complex arguments to  plot() and Effect() into lists; legacy arguments retained as alternatives.
+ 
+ o Use lattice theme for plot defaults.
+ 
+ o Improve generation of default values for numeric predictors.
+ 
+ o Methods for "svyglm" objects.
+ 
+ o New vignette on partial residuals with contrived data. 
+ 
+ o Various small improvements and fixes.
+
+Version 3.1-3
+
+ o Fixed bug in using multiline=TRUE with effects with 4 or more terms
+
+ o Fixed a bug in Effect.clmm, Effect.mer, and Effect.lme that caused failure with a data.frame named m
+
+ o Fixed bug in Effect.clmm and Effect.clmm2
+
+ o Improved stability of handling linear and generalized linear mixed effects models from lme4 and nlme
+
+ o Fixed bug in plot.eff() affecting multiline displays with four or more predictors in the effect.
+
+ o Fixed warnings (new in R 3.4.0) produced by use of 1 x 1 arrays in computing SEs of effects for multinom and polr model (problem reported by Stefan Th. Gries).
+
+Version 3.1-2
+
+ o Fixed bug handling 'start' argument in glmm's.  Reported by Mariano Devoto; fix by Ben Bolker
+
+ o Modified internal function make.ticks() so that it doesn't fail due to floating-point inaccuracy (following error reported by Joe Clayton Ford).
+
+ o Check formula for presence of factor(), etc. (suggestion of Ulrike Gromping).
+
+ o Fixed bug in Effect.clm() and some other methods (reported by David Barron), which didn't pass ... argument.
+
+ o A warning is now printed if partial residuals are requested in a multiline plot.
+
+ o Corrected plotting of partial residuals with various scalings of the y-axis and x-axis.
+
+ o Added show.strip.values argument to plot.eff() and plot.effpoly().
+
+Version 3.1-1
+
+ o Requires R >= 3.2.0 (requested by CRAN).
+
+Version 3.1-0
+
+ o Corrected and improved computation of partial residuals, fixing bug introduced by bug fix in 3.0-7.
+
+Version 3.0-7
+
+ o Extends to logistic ordinal response models fit using 'clm' and 'clmm' in the 'ordinal package.
+
+ o Fixed bug in handling of terms like polynomials in non-focal covariates (reported by Urs Kalbitzer).
+
+ o Added package tests.
+
+Version 3.0-6
+
+ o Fix bug in Effect for mer objects with 'poly' in the formula (and related issues).
+
+ o Allow "||" in variance formulae in lmer4 models.
+
+ o Minor bug in handling class=="array" in the Effect() method.
+
+ Version 3.0-5
+
+ o Fixed bug when the name of the data frame is the name of function like "sort" in mixed-effects models with lme4 (problem originally reported by Saudi Sadiq).
+
+ o Fixed bug in predictor-name matching that could occur in names with periods (reported by Trevor Avery).
+
+ o Fixed package imports to conform to new CRAN rules.
+
+ o Added residuals.cex argument to plot.eff().
+
+ o Changes to work with pbkrtest 0.4-4.
+
+Version 3.0-4
+
+ o New default of KR=FALSE because KR=TRUE can be very slow.
+
+ o KR argument now works correctly with allEffects().
+
+ o Mixed models with negative binomial did not work and now they do.
+
+ o Added methods for ordinal mixed models using 'clmm2' for the ordinal package.
+
+ o Moved pbkrtest to Suggests (wasn't done properly previously).
+
+ o Tweak to handling key.args (suggestion of Michael Friendly).
+
+ o Use non-robust loess smooth for partial residuals from non-Gaussian GLMs.
+
+ o Rationalized type and rescale.axis arguments to plot.eff(); scale.axis argument is deprecated.
+
+ o Added setStrip() and restoreStrip() to control colors of lattice strips and make beginning and ending conditioning lines clearer.
+
+ o Added residuals.smooth.color argument to plot.eff().
+
+ o Cleaned up sources to conform to CRAN requirements.
+
+Version 3.0-3
+
+ o Made key.args argument to plot.eff() and plot.effpoly() more flexible (suggestion of Ian Kyle).
+
+ o Moved pbkrtest package to Suggests and adjusted code for mixed models accordingly, to accomodate Debian (request of Dirk Eddelbuettel).
+
+ o Fixed \dont-test{} examples.
+
+Version 3.0-2
+
+ o plot.eff() honors rescale.axis=FALSE when plotting partial residuals (bug reported by Alexander Wietzke).
+
+ o Effect.mer() can use KR coefficient covariances to construct CIs for effects in LMMs.
+
+ o Modernized package dependencies/namespace.
+
+Version 3.0-1
+
+ o Added an argument vcov. to Effect and effect (and allEffects) to select a function for computing the variance covariance matrix of the coefficient estimates.  The default is the usual `vcov` fucntion.
+
+ o Added a warning to the documentation for effect for using predictors of class "dates" or "times".
+
+ o Fixed bug in Effect.gls() when var or cor function depends on variables in the data set (reported by Felipe Albornoz).
+
+ o Small fixes/improvements.
+
+Version 3.0-0
+
+ o Added partial residuals for multidimensional component+residual plots to Effect.lm().
+
+ o Small bug fixes.
+
+Version 2.3-0
+
+ o removed stray character in a the mixed models file
+
+ o ci.style="bands" is now the default for variates on the horizontal axis and can also be used with multiline=TRUE
+
+ o Added ci.style='bands', band.transparency, band.colors, and lwd to plot.effpoly() for line plots to give filled confidence bands and control line width
+
+ o Added Effect.mlm() for multivariate linear models
+
+ o Interpolating splines are now used by default when drawing lines in effects plots unless the argument use.splines=FALSE
+
+ o effect() now calls Effect(); all effect() methods are removed, but effect() will continue to work as before.
+
+ o Various methods for effect objects now handle factors with a "valid" NA level (fixing bug reported by Joseph Larmarange).
+
+ o Further bug fixes in effects.mer() and effects.lme() (following bug report by Felipe E. Albornoz).
+
+Version 2.2-6
+
+ o bug fixes in effects.mer and effects.lme.
+
+ o added terms.gls() to make effect.gls() and Effect.gls() work again.
+
+ o plot.eff() gains an lwd= option to control the width of fitted lines.
+
+ o Added ci.style='bands' and alpha= to plot.eff() for non-multiline plots to give filled confidence bands.
+
+Version 2.2-5
+
+ o Added support for polytomous latent class analysis based on the poLCA package.
+
+ o Modified mixed-model methods to all use in user-functions.
+
+ o Changed the default method for determining number of levels for a continuous predictor; see help page for 'effect' and discussion of the 'xlevels' argument for details.  Argument 'default.levels', while still included for compatibility, is depricated.
+
+ o Added .merMod methods for development version of lme4.
+
+ o Added support for lme4.0.
+
+ o Fixed bug preventing restoration of warn option (reported by Kenneth Knoblauch).
+
+ o Fixed handling of ticks.x argument to plot.eff() and plot.effpoly(), now works as advertized.
+
+ o Adjusted package dependencies, imports for CRAN checks.
+
+ o Changed name of Titanic dataset to TitanicSurvival to avoid name clash (request of Michael Friendly).
+
+ o Minor fixes.
+
+Version 2.2-4
+
+ o Add argument 'ci.style' to plot.eff() and plot.eff() to allow confidence intervals to be displayed as lines or using error bars.  Confidence bars are permitted on multiline plots (after suggestion by Steve Taylor).
+
+ o Allow empty cells with crossed factors for lm, glm and multinom.
+
+ o Added warning about logical predictors (suggestion of Kazuki Yoshida).
+
+Version 2.2-3
+
+ o Fixed bugs in axis scaling and xlim specification (reported by Achim Zeileis).
+
+ o Small changes for compatability with R 2.16.0.
+
+Version 2.2-2
+
+o Use asymptotic normal to get confidence limits for mer and lme objects
+
+o Correct effects.lme to work with weights
+
+o Added Effect.mer(), Effect.lme(), Effect.gls(), Effect.multinom(), and Effect.polr() methods.
+
+o Safe predictions simplified in effect.multinom() and effect.polr().
+
+o plot() methods for eff and effpoly objects permit predictor transformations.
+
+o Added as.data.frame.eff(), as.data.frame.effpoly(), and as.data.frame.efflatent (suggestion of Steve Taylor).
+
+o Small bug fixes.
+
+Version 2.2-1
+
+o Some examples wrapped in \donttest{} to decrease package check time.
+
+Version 2.2-0
+
+o Introduced more flexible Effect() generic, along with Effect.lm() method for linear and generalized linear models.
+
+o Default is now ask=FALSE for plot.efflist().
+
+o globalVariables("wt") declared for R 2.15.1 and above.
+
+o Small bug fixes.
+
+Version 2.1-2
+
+o Offsets for linear and generalized linear (and mixed) models are now supported.
+
+o cbind(successes, failures) now supported for binomial generalized linear (and mixed) models.
+
+Version 2.1-1
+
+o plot.effpoly() now honors ylim argument when no confidence intervals are plotted (fixing problem reported by Achim Zeileis).
+
+o safe predictions simplified in effect.lm(), producing correct results for mixed models (other methods to follow).
+
+o plot.eff() now honors type argument.
+
+o nlme and lme4 moved to Suggests.
+
+o effect() now works when options(OutDec= ',') (suggestion of Guomundur Arnkelsson).
+
+
+Version 2.1-0
+
+o added support for 'mer' objects from lme4 and 'lme' objects from 'nlme'.  Added 'rotx', 'roty' and 'grid' arguments to the plot methods.
+
+o See CHANGES file for changes to older versions.

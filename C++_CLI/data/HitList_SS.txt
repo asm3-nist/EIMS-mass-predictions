@@ -1,0 +1,31 @@
+> MSPepSearch ver. 0.95 t5 build Mon May 15 10:56:17 2017. Started 02/13/23 at 19:36:30. Command line:
+> MSPepSearch\2017_05_15_MSPepSearch\x64\MSPepSearch64.exe  Sf /LIB searchLibraries\SWGDRUG3.3 /HITS 25 /INP data\Query_SS.MSP /OutNumMP /OutMW /PROGRESS /LibInMem /OUTTAB data\HitList_SS.txt
+>
+Unknown	Rank	Library	Id	Mass	Lib MW	MF	Prob(%)	Name	Charge	FlankRes	Mods	Pep	Nreps	Tfratio	Protein
+Query	1	SWGDRUG3.3	3889	383.237	383	688	85.7	5-Fluoro-AKB48							
+Query	2	SWGDRUG3.3	4648	367.206	367	609	9.8	5-Fluoro-CUMYL-P7AICA							
+Query	3	SWGDRUG3.3	4128	396.196	396	559	2.0	PX 2							
+Query	4	SWGDRUG3.3	4282	367.206	367	538	0.8	5-Fluoro-CUMYL-PINACA							
+Query	5	SWGDRUG3.3	4873	395.237	395	532	0.7	5-Fluoro-tert-Butylbenzyl-PINACA							
+Query	6	SWGDRUG3.3	4640	384.221	384	500	0.2	5-Fluoro-APINAC							
+Query	7	SWGDRUG3.3	4312	375.175	375	498	0.2	5-Fluoro-PCN							
+Query	8	SWGDRUG3.3	4240	377.154	377	483	0.1	5-Fluoro-NPB-22							
+Query	9	SWGDRUG3.3	4238	376.159	376	469	0.1	5-Fluoro-SDB-005							
+Query	10	SWGDRUG3.3	4241	363.196	363	469	0.1	5-Fluoro-AMB							
+Query	11	SWGDRUG3.3	4278	362.212	362	465	0.1	5-Fluoro-ADB-PINACA isomer 2							
+Query	12	SWGDRUG3.3	4430	363.196	363	464	0.1	3-Fluoro-AMB							
+Query	13	SWGDRUG3.3	4506	363.196	363	464	0.1	4-Fluoro-AMB							
+Query	14	SWGDRUG3.3	4505	363.196	363	462	0.0	2-Fluoro-AMB							
+Query	15	SWGDRUG3.3	4007	377.154	377	451	0.0	5F-PB-22 indazole analogue							
+Query	16	SWGDRUG3.3	4162	348.196	348	446	0.0	AB-PINACA N-(3-fluoropentyl) isomer							
+Query	17	SWGDRUG3.3	4503	377.211	377	442	0.0	3-Fluoro-ADB							
+Query	18	SWGDRUG3.3	3711	348.196	348	441	0.0	5-Fluoro-AB-PINACA							
+Query	19	SWGDRUG3.3	3512	399.232	399	439	0.0	5-Fluoro-AKB48 N-(5-hydroxypentyl) metabolite							
+Query	20	SWGDRUG3.3	3475	381.242	381	439	0.0	AKB48 N-(5-hydroxypentyl) metabolite							
+Query	21	SWGDRUG3.3	4502	377.211	377	434	0.0	2-Fluoro-ADB							
+Query	22	SWGDRUG3.3	4504	377.211	377	430	0.0	4-Fluoro-ADB							
+Query	23	SWGDRUG3.3	3545	348.196	348	429	0.0	AB-PINACA N-(4-fluoropentyl) isomer							
+Query	24	SWGDRUG3.3	4259	377.211	377	429	0.0	5-Fluoro-ADB							
+Query	25	SWGDRUG3.3	4169	330.211	330	424	0.0	FAB-144							
+>
+> Completed. 1 spectra in 0.008 sec, process time = 0.027 sec (read 0.001s print 0.001s init pio 0.000s aux 0.000s sp 0.000s, search only: 0.002s+0.003s=0.006s, 181.646 spec/s) 128.594 spec/s Compared 219 spec (28162.1 spec/s), No spectra compared 0, No hits 0, peaks/spec 176.00

@@ -1,0 +1,31 @@
+> MSPepSearch ver. 0.95 t5 build Mon May 15 10:56:17 2017. Started 02/13/23 at 19:47:27. Command line:
+> MSPepSearch\2017_05_15_MSPepSearch\x64\MSPepSearch64.exe  Sf /LIB C:\Moorthy-MMP\Code\R_ShinyApplication\shiny\wrk\SearchLibraries\SWGDRUG3.3 /HITS 25 /INP Data\Query_SS.MSP  /OutNumMP /OutMW /PROGRESS /LibInMem /OUTTAB Data\HitList_SS.txt
+>
+Unknown	Rank	Library	Id	Mass	Lib MW	MF	Prob(%)	Name	Charge	FlankRes	Mods	Pep	Nreps	Tfratio	Protein
+5-Fluoro-7-APAICA	1	SWGDRUG3.3	3889	383.237	383	718	89.0	5-Fluoro-AKB48							
+5-Fluoro-7-APAICA	2	SWGDRUG3.3	4648	367.206	367	626	7.5	5-Fluoro-CUMYL-P7AICA							
+5-Fluoro-7-APAICA	3	SWGDRUG3.3	4128	396.196	396	593	2.0	PX 2							
+5-Fluoro-7-APAICA	4	SWGDRUG3.3	4282	367.206	367	561	0.5	5-Fluoro-CUMYL-PINACA							
+5-Fluoro-7-APAICA	5	SWGDRUG3.3	4873	395.237	395	551	0.4	5-Fluoro-tert-Butylbenzyl-PINACA							
+5-Fluoro-7-APAICA	6	SWGDRUG3.3	4312	375.175	375	523	0.1	5-Fluoro-PCN							
+5-Fluoro-7-APAICA	7	SWGDRUG3.3	4640	384.221	384	511	0.1	5-Fluoro-APINAC							
+5-Fluoro-7-APAICA	8	SWGDRUG3.3	4389	349.180	349	506	0.1	5-Fluoro-AMB metabolite 7							
+5-Fluoro-7-APAICA	9	SWGDRUG3.3	4240	377.154	377	504	0.1	5-Fluoro-NPB-22							
+5-Fluoro-7-APAICA	10	SWGDRUG3.3	4241	363.196	363	495	0.0	5-Fluoro-AMB							
+5-Fluoro-7-APAICA	11	SWGDRUG3.3	4278	362.212	362	494	0.0	5-Fluoro-ADB-PINACA isomer 2							
+5-Fluoro-7-APAICA	12	SWGDRUG3.3	4506	363.196	363	493	0.0	4-Fluoro-AMB							
+5-Fluoro-7-APAICA	13	SWGDRUG3.3	4430	363.196	363	488	0.0	3-Fluoro-AMB							
+5-Fluoro-7-APAICA	14	SWGDRUG3.3	4505	363.196	363	486	0.0	2-Fluoro-AMB							
+5-Fluoro-7-APAICA	15	SWGDRUG3.3	3512	399.232	399	485	0.0	5-Fluoro-AKB48 N-(5-hydroxypentyl) metabolite							
+5-Fluoro-7-APAICA	16	SWGDRUG3.3	4238	376.159	376	484	0.0	5-Fluoro-SDB-005							
+5-Fluoro-7-APAICA	17	SWGDRUG3.3	4169	330.211	330	484	0.0	FAB-144							
+5-Fluoro-7-APAICA	18	SWGDRUG3.3	3475	381.242	381	483	0.0	AKB48 N-(5-hydroxypentyl) metabolite							
+5-Fluoro-7-APAICA	19	SWGDRUG3.3	4503	377.211	377	478	0.0	3-Fluoro-ADB							
+5-Fluoro-7-APAICA	20	SWGDRUG3.3	4504	377.211	377	471	0.0	4-Fluoro-ADB							
+5-Fluoro-7-APAICA	21	SWGDRUG3.3	4007	377.154	377	470	0.0	5F-PB-22 indazole analogue							
+5-Fluoro-7-APAICA	22	SWGDRUG3.3	4162	348.196	348	469	0.0	AB-PINACA N-(3-fluoropentyl) isomer							
+5-Fluoro-7-APAICA	23	SWGDRUG3.3	3711	348.196	348	467	0.0	5-Fluoro-AB-PINACA							
+5-Fluoro-7-APAICA	24	SWGDRUG3.3	4502	377.211	377	467	0.0	2-Fluoro-ADB							
+5-Fluoro-7-APAICA	25	SWGDRUG3.3	4259	377.211	377	464	0.0	5-Fluoro-ADB							
+>
+> Completed. 1 spectra in 0.006 sec, process time = 0.010 sec (read 0.001s print 0.001s init pio 0.000s aux 0.000s sp 0.000s, search only: 0.001s+0.002s=0.004s, 267.465 spec/s) 180.825 spec/s Compared 219 spec (39600.7 spec/s), No spectra compared 0, No hits 0, peaks/spec 345.00

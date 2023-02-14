@@ -1,0 +1,13 @@
+Effect.default          Functions For Constructing Effect Displays for
+                        Many Modeling Paradigms
+LegacyArguments         Legacy Arguments for 'plot' and 'Effect'
+                        Methods
+effect                  Functions For Constructing Effect Displays
+effects-package         Effect Displays for Linear, Generalized Linear,
+                        and Other Models
+effectsHexsticker       View the Official Hex Sticker for the effects
+                        Package
+effectsTheme            Set the lattice Theme for Effect Plots
+plot.effects            Plots of Effects and Predictor Effects
+predictorEffects        Functions For Computing Predictor Effects
+summary.eff             Summarizing and Printing Effects
