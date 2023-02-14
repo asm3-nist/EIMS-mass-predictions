@@ -1,4 +1,4 @@
-This is prototype software developed for predicting molecular mass from an electron ionization mass spectrum. The code in the folder "R_ShinyApplication" accompanies the manuscript: "Inferring the molecular mass of an anlayte from its electron ionization mass spectrum" by Moorthy et. al. Other folders contain re-implementations with the objective of improvement the preliminary implementation. The authors cannot guarantee this source code will be extended beyond testing and development. 
+This is prototype software developed for predicting molecular mass from an electron ionization mass spectrum. The code in the folder "R_ShinyApplication" accompanies the manuscript: "Inferring the molecular mass of an anlayte from its electron ionization mass spectrum" by Moorthy et. al. Other folders contain re-implementations with the objective of improving the efficiecy of the preliminar implementation. The authors cannot guarantee this source code will be extended beyond testing and development. 
 
 
 
